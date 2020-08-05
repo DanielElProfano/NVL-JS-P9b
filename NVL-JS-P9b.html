@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript" >
+	
+/*Dados los siguientes valores en dos variables de cadena:
+
+Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo
+Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti
+Crea un array donde se guarde en cada celda como primer elemento el día de la semana y como segundo el lugar donde se realiza el concierto.*/
+
+var dia = "Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo";
+var ciudad = "Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti";
+var matriz_dia = dia.split(",");
+var matriz_ciudad = ciudad.split(".");
+
+var matriz_conciertos = [[matriz_dia[0], matriz_ciudad[0]],[matriz_dia[1],matriz_ciudad[1]],[matriz_dia[2], matriz_ciudad[2]],[matriz_dia[3],matriz_ciudad[3]],[matriz_dia[4], matriz_ciudad[4]],[matriz_dia[5],matriz_ciudad[5]],[matriz_dia[6], matriz_ciudad[6]]];
+alert("Muestro todo el array: " + matriz_conciertos);
+alert("Accedo al elemento 2 de la primera celda: "+ matriz_conciertos[0][1]);
+
+
+</script>
+</html>
